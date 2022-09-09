@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#header{
+  background-color: pink;
+  height: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+#free{
+  float:center;
+
+
+}
+
+#orders{
+  float:right
+}
+
+#navbar ul{
+  height: 100px;
+  background-color: antiquewhite;
+
+  
+}
+
+#navbar a{
+  text-decoration: none;
+  padding:10px;
+  
+}
+
+#navbar li{
+  list-style: none;
+  float: right;
+  padding-top:80px;
+  padding-left: 40px
+}
+
+#headingpic{
+  height: 500px;
+  width: 1200px;
+  background-color: pink;
+}
+
+#saleitems{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  height:400px;
+  
+}
+
+.leftpic{
+  background-color: aqua;
+}
+.midpic{
+  background-color: bisque;
+
+}
+.rightpic{
+  background-color: blue;
+}
+
+#shop{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  height: 300px
 }
