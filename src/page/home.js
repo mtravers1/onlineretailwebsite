@@ -13,12 +13,16 @@ const Home = () => {
             </div>
             <p> A few of our favorite things</p>
             <div id="shop">
-                <span><img/>Billys Jeans</span>
-                <span><img/> Freakem Dress</span>
-                <span><img/>Like a snake Ma</span>
-                <span><img/>Lil black dress</span>
+                <img style={{backgroundColor:"orange"}} ></img>
+                <img style={{backgroundColor: "green"}}></img>
+                <img style={{backgroundColor: "blue"}}></img>
+                <img style={{backgroundColor: "green"}}></img>
             </div>
             <button type="button">Shop All</button>
+            <div id="signup">
+                <h1>Sign up for Discounts and Updates</h1>
+                <h1>Find out about upcoming promotions and new release</h1>
+            </div>
 
         </div>
         

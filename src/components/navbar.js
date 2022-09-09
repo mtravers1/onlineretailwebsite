@@ -5,11 +5,9 @@ const Navbar = ()=>{
         <div id="navbar">
             
             <ul>
+  
             <li>
-                
-            </li>
-            <li>
-                    <input type="text"></input>
+                    <input type="text" style={{width:"400px", borderRadius:"20%", height:"20px"}} ></input>
                 </li>
                 <li>
                     <a href=''>Shop V</a>
@@ -23,10 +21,9 @@ const Navbar = ()=>{
                 <li>
                     <a href=''>Purses</a>
                 </li>
-                <li>
                 <span style=
-                {{float:"left", paddingRight:150}}>Newin</span>
-                </li>
+                {{float:"left", paddingTop:70}}>Newin</span>
+               
             </ul>
         </div>    
         )

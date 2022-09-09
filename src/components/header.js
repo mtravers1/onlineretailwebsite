@@ -3,7 +3,8 @@ import React from "react";
 const Header = () => {
     return(
         <div id="header">
-            <p id="free">Free Shipping <span style={{fontFamily:"cursive"}}>US orders over $100</span></p>
+            <p><span style={{fontFamily:"cursive"}}>Free Shipping</span>US orders over $100 <span style={{float:"right"}}>QRLcode</span></p>
+            
             
             
         </div>
