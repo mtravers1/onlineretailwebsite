@@ -1,0 +1,80 @@
+#header{
+  background-color: pink;
+  height: 50px;
+  font-size: 36px;
+  border: 1px bold solid
+}
+
+
+#free{
+  float:center;
+
+
+}
+
+#orders{
+  float:right
+}
+
+#navbar{
+  font-size: 24px;
+}
+#navbar ul{
+  height: 100px;
+  background-color: antiquewhite;
+
+  
+}
+
+#navbar a{
+  text-decoration: none;
+  padding:10px;
+  
+}
+
+#navbar li{
+  list-style: none;
+  float: right;
+  padding-top:70px;
+  padding-left: 50px
+}
+
+#headingpic{
+  height: 500px;
+  width: 1500px;
+  background-color: pink;
+}
+
+#saleitems{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  height:400px;
+  
+}
+
+.leftpic{
+  background-color: aqua;
+}
+.midpic{
+  background-color: bisque;
+
+}
+.rightpic{
+  background-color: blue;
+}
+
+#shop{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 2fr));
+  height: 300px;
+  
+}
+
+#shop img{
+  height: 290px;
+  width: 255px;
+}
+
+#signup{
+  width: 50%;
+}
