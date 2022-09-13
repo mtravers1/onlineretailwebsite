@@ -1,8 +1,10 @@
 #header{
   background-color: pink;
-  height: 50px;
-  font-size: 36px;
-  border: 1px bold solid
+  /* height: 50px; */
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+
 }
 
 
@@ -16,27 +18,45 @@
   float:right
 }
 
-#navbar{
+#homenavbar{
   font-size: 24px;
 }
-#navbar ul{
+#homenavbar ul{
   height: 100px;
   background-color: antiquewhite;
 
   
 }
 
-#navbar a{
+#homenavbar a{
   text-decoration: none;
   padding:10px;
   
 }
 
-#navbar li{
+
+
+#homenavbar li{
   list-style: none;
   float: right;
   padding-top:70px;
   padding-left: 50px
+}
+
+#navbar{
+  height:30px
+}
+
+#navbar li{
+  list-style: none;
+  text-decoration: none;
+  float: right;
+}
+
+#navbar a{
+  text-decoration: none;
+  float: left;
+  padding: 10px
 }
 
 #headingpic{
@@ -48,25 +68,34 @@
 #saleitems{
   display:grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
-  height:400px;
+  height:600px;
+  
+  padding:15px;
   
 }
+ #saleitems p{
+  font-size: 40px;
+  padding-right:75px;
+  position: relative;
+  top:400px;
+  
+ }
 
 .leftpic{
-  background-color: aqua;
+  background-image: url("./pics/pic2.jpeg");
 }
 .midpic{
-  background-color: bisque;
+  background-image: url("./pics/pic2.jpeg");
 
 }
 .rightpic{
-  background-color: blue;
+  background-image: url("./pics/pic2.jpeg");
 }
-
 #shop{
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 2fr));
-  height: 300px;
+  height: 400px;
+  grid-gap: 20px;
   
 }
 
@@ -77,4 +106,131 @@
 
 #signup{
   width: 50%;
+
+}
+
+
+
+#dress1{
+  background-image: url('./pics/dress1.jpeg');
+}
+#dress2{
+  background-image: url('./pics/dress2.jpeg');
+}
+#dress3{
+  background-image: url('./pics/dress3.jpeg');
+}
+#dress4{
+  background-image: url('./pics/dress4.jpeg');
+}
+
+#signup input{
+  width: 600px;
+  height: 50px;
+  border-radius: 30px;
+}
+.collab{
+  font-size: 32px;
+  background-color: burlywood;
+
+}
+
+.story{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  font-size: 24px;
+}
+
+#follow{
+  height: 200px;
+  background-color: black;
+}
+
+#footer{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+}
+
+#footer li{
+  list-style: none;
+}
+
+#footer a{
+  text-decoration: none;
+}
+
+#tagline{
+  padding-top: 100px;
+  height: 400px;
+
+}
+
+#tagline p{
+  font-size: 36px;
+
+}
+
+#tagline input{
+  height: 50px;
+  width: 600px;
+
+}
+
+#tagline button{
+  height: 50px;
+  width: 200px;
+}
+
+#category {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  grid-gap:20px;
+  padding: 100px;
+}
+
+#category img{
+  height: 250px;
+  width: 205px;
+  background-image: url('./pics/dress4.jpeg');
+
+}
+
+#shopp{
+  height: 250px;
+  width: 205px;
+  background-color: lightgray;
+}
+
+#newsletter{
+  height:200px;
+  font-size: 39px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+#prod{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(auto, 1fr));
+  border: 1px solid grey
+}
+
+#product{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(auto, 1fr));
+  grid-template-rows: repeat(3, minmax(auto, 1fr));
+  border: 1px solid grey
+}
+
+#product img{
+  width:100px;
+  height:100px;
+  background-color: chocolate
+}
+
+#product p{
+  float:right
+}
+
+#bottom{
+  text-align: center;
 }
