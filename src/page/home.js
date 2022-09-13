@@ -4,11 +4,13 @@ import Footer from "../components/footer";
 import End from "../components/bottom";
 import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import HomeNavbar from "../components/homenav";
+import Header from "../components/header";
 
 
 const Home = () => {
     return(
         <div id="home">
+            <Header/>
             <HomeNavbar/>
             <img id="headingpic" scr="./pics/newarr.png"></img>
             <div style={{padding:"20px", border:"2px solid black", borderRadius:10, backgroundColor:"pink", fontWeight:"bold"}} href="/">View all items on sale here</div>

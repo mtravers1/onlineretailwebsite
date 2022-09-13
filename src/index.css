@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 #header{
   background-color: pink;
   /* height: 50px; */
@@ -179,6 +180,9 @@
 #tagline button{
   height: 50px;
   width: 200px;
+  background-color: grey;
+  color:white;
+  
 }
 
 #category {
@@ -196,9 +200,16 @@
 }
 
 #shopp{
+  font-family: 'Lato', sans-serif;
+
   height: 250px;
   width: 205px;
   background-color: lightgray;
+}
+
+#shopal{
+  font-family: 'Lato', sans-serif;
+  
 }
 
 #newsletter{
@@ -226,11 +237,35 @@
   height:100px;
   background-color: chocolate
 }
-
+#product div{
+  padding: 20px
+}
 #product p{
   float:right
 }
 
 #bottom{
   text-align: center;
+}
+
+
+#bottomnavbar{
+  height:30px
+}
+
+#bottomnavbar li{
+  list-style: none;
+  text-decoration: none;
+  float: right;
+}
+
+#bottomnavbar a{
+  text-decoration: none;
+  
+  padding: 10px
+}
+
+#bottomnavbar ul{
+  position: relative;
+  right: 40%;
 }

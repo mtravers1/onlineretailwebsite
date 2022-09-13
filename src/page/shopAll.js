@@ -1,20 +1,30 @@
 import React from "react";
 import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import Navbar from "../components/navbar";
+import BottomNavbar from "../components/bottomnav";
 
 const ShopAll = ()=>{
     return(
-        <div>
-            
+        <div id="shopal">
+            <div style={{backgroundColor:"lightgrey"}}>
+              
             <Navbar />
+            
+            
+            
+                    
+                
             <div id="tagline">
                 <br/>
             <p>Tagline describing your e-shop</p>
-
+            
+            <hr style={{width:"300px"}}/>
+            <br/>
             <input type="text"></input> <button type="submit">Submit</button>
             </div>
-   
+            </div>
             <div>
+
                 <h1>Featured Categories</h1>
                 <p>sed ut perpiciatis unde omnis iste natus error sit voluptetem<br/>accusanrium doloremque laudantium</p>
                 <div id="category">
@@ -61,7 +71,7 @@ const ShopAll = ()=>{
                 </span>
                 </div>
                 <div id="bottom">
-                <Navbar/>
+                <BottomNavbar/>
                 </div>
             </div>
         </div>

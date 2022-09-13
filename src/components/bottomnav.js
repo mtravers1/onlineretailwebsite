@@ -1,16 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
-const Navbar = ()=>{
+const BottomNavbar = ()=>{
     return(
         
-        <div id="navbar">
+        <div id="bottomnavbar">
             
             <ul>
   
-            <li>
-                    <button type='button'><Link to=''>Your Cart</Link></button>
-                </li>
+         
                 <li>
                     <Link to="/home">home</Link>
                 </li>
@@ -30,4 +28,4 @@ const Navbar = ()=>{
         </div>    
         )
 }
-export default Navbar
+export default BottomNavbar
