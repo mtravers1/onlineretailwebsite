@@ -9,7 +9,7 @@ const Navbar = ()=>{
             <ul>
   
             <li>
-                    <button type='button'><Link to=''>Your Cart</Link></button>
+                    <button type='button'><Link to='/yourcart'>Your Cart</Link></button>
                 </li>
                 <li>
                     <Link to="/home">home</Link>

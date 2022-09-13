@@ -16,11 +16,12 @@ const ShopAll = ()=>{
                 
             <div id="tagline">
                 <br/>
-            <p>Tagline describing your e-shop</p>
+            <p style={{textAlign:"center"}}>Tagline describing your e-shop</p>
             
             <hr style={{width:"300px"}}/>
             <br/>
-            <input type="text"></input> <button type="submit">Submit</button>
+            <div style={{textAlign:"center"}}>
+            <input type="text"></input> <button type="submit">Submit</button></div>
             </div>
             </div>
             <div>
