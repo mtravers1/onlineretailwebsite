@@ -276,24 +276,36 @@
   text-align: center;
 }
 
+#shoppingcart ul{
+position: relative;
+top: 50%
 
+}
 #shoppingcart li{
   text-decoration: none;
   list-style: none;
-  float:left;
-  text-align: center;
-  
-  padding-left: 50px;
-  position: relative;
-  left: 50px;
-  top:40px;
+  flex-direction: row;
   font-size: 36px;
   color: gray;
   cursor: pointer;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 #shoppingcart li:hover{
   color: black;
+}
+
+#shoppingcart button{
+  background: none;
+  border: none;
+  font-size: 29px;
+  float: left;
+  display: flex;
+  align-items: center;
+  
+  
 }
 
 #shop{
@@ -303,3 +315,8 @@
 
 }
 
+
+#payment{
+  display: grid;
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
+}
