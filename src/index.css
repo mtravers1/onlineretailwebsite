@@ -270,3 +270,36 @@
   right: 40%; 
 }
 
+#shoppingcart{
+  height:200px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+
+#shoppingcart li{
+  text-decoration: none;
+  list-style: none;
+  float:left;
+  text-align: center;
+  
+  padding-left: 50px;
+  position: relative;
+  left: 50px;
+  top:40px;
+  font-size: 36px;
+  color: gray;
+  cursor: pointer;
+}
+
+#shoppingcart li:hover{
+  color: black;
+}
+
+#paymentoptions{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 10px;
+
+}
+
