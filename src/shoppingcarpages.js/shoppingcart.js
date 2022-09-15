@@ -1,4 +1,6 @@
 import React from "react";
+import Nextbuttom from "../components/nextbutton";
+import Summary from "../components/summary";
 
 const Shoppingcart = () => {
     return(
@@ -32,13 +34,7 @@ const Shoppingcart = () => {
 
 
             </span>
-            <div id="next"><hr style={{color:"black"}}/>
-            <button style={{}}>next</button>
-            <span style={{paddingLeft:"30px"}}>
-            <button >back</button>
-            </span>
-            
-            </div>
+            <Nextbuttom/>
             
             
 
@@ -53,7 +49,7 @@ const Shoppingcart = () => {
         </div>
 
 
-        <div id="summary" style={{paddingLeft:"100px"}}>
+        {/* <div id="summary" style={{paddingLeft:"100px"}}>
             <h1 >Summary<hr/></h1>
             <input type="text" alt="Enter Coupon code"></input><br/><br/><hr/>
             <div id="summaryinfo">
@@ -64,7 +60,8 @@ const Shoppingcart = () => {
             </div><hr/>
             <p style={{textAlign:"left"}} >Total <span style={{float:"right"}}>100</span></p>
             
-        </div>
+        </div> */}
+        <Summary/>
 
     </div>
     )
