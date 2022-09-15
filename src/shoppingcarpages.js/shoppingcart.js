@@ -27,26 +27,43 @@ const Shoppingcart = () => {
 <h1>ProductName</h1>
 <p>Lorem ipsum dolor sit amet, consecteour</p>
 <p>$300</p>
-</span><hr style={{color:"black"}}/>
+
+</span>
 
 
             </span>
-            <div id="next">
-            <button style={{}}>next</button><button>back</button></div>
+            <div id="next"><hr style={{color:"black"}}/>
+            <button style={{}}>next</button>
+            <span style={{paddingLeft:"30px"}}>
+            <button >back</button>
+            </span>
+            
+            </div>
+            
             
 
 
  
 
+        
+        </div>
+        
+
 
         </div>
 
 
-        </div>
-
-
-        <div style={{paddingLeft:"100px"}}>
+        <div id="summary" style={{paddingLeft:"100px"}}>
             <h1 >Summary<hr/></h1>
+            <input type="text" alt="Enter Coupon code"></input><br/><br/><hr/>
+            <div id="summaryinfo">
+                
+                <span><p>subtotal<span style={{float:"right"}}>100</span></p></span>
+                <span><p>shipping <span style={{float:"right"}}>100</span></p></span>
+                <span><p>taxes <span style={{float:"right"}}>100</span></p></span>
+            </div><hr/>
+            <p style={{textAlign:"left"}} >Total <span style={{float:"right"}}>100</span></p>
+            
         </div>
 
     </div>
