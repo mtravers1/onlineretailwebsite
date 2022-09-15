@@ -3,7 +3,9 @@ import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import BottomNavbar from "../components/bottomnav";
 
-const ShopAll = ()=>{
+
+
+const ShopAll = (props)=>{
     return(
         <div id="shopal">
             <div style={{backgroundColor:"lightgrey"}}>
@@ -47,7 +49,11 @@ const ShopAll = ()=>{
                 <div id="prod">
             
                 
-                <span style={{width:"70%", float:"left"}}><h1>Header Reguarding your product</h1><br/>Sed ut perpiciatis unde omnis iste natus error voluptete accusanrium doloremque laudantiumtotam rem aperiam eaque ipsa quae ab illo<br/><button type="button"><Link to="/"/>Browse all</button></span>
+                <span style={{width:"70%", float:"left"}}><h1>Header Reguarding your product</h1>
+                <br/>Sed ut perpiciatis unde omnis iste natus error voluptete accusanrium doloremque laudantiumtotam rem aperiam eaque ipsa quae ab illo<br/>
+                <button type="button">
+                    <Link to="/browseall">Browse all</Link>
+                    </button></span>
                 <span id="product">
                         <div>
                             <img>
@@ -55,20 +61,7 @@ const ShopAll = ()=>{
                             <p>Product</p>
                         </div>
                         
-                        <div><img>
-                            </img><p>Product</p></div>
-
-                        <div><img>
-                            </img><p>Product</p></div>
-
-                        <div><img>
-                            </img><p>Product</p></div>
-
-                        <div><img>
-                            </img><p>Product</p></div>
-
-                        <div><img>
-                            </img><p>Product</p></div>
+                        
                 </span>
                 </div>
                 <div id="bottom">

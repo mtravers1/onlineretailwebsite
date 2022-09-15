@@ -14,7 +14,7 @@ const Shippingdetails = () => {
 
     const [address, setAddress]=useState('')
 
-    const [country, setCountry]=useState('')
+    const [country, setCountry]=useState('country')
 
     const [city, setCity]=useState('')
     
@@ -24,7 +24,20 @@ const Shippingdetails = () => {
 
 
     const submitShipping =(e) =>{
-        e.preventDefault()
+       e.preventDefault()
+        const shippingsub = {
+            
+            firstName,
+            lastName,
+            addres,
+            address,
+            city,
+            zip,
+            phone
+           
+            
+        }
+        console.log(shippingsub)
     }
 
     return(
@@ -90,7 +103,7 @@ const Shippingdetails = () => {
                 required
                 value={phone}
                 onChange={(e)=>setPhone(e.target.value)}></input>
-
+                <button>submit</button>
                 </form>
                 
                 

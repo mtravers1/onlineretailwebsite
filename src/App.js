@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import ShopAll from './page/shopAll';
 import Navbar from './components/navbar';
 import Cart from './page/yourcart';
+import Collection from './page/collection';
+import Browseall from './page/browseall';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
         <Route path='/about' element={<AboutUs/>}/>
         <Route path='/shopAll' element={<ShopAll/>}/>
         <Route path='/yourcart' element={<Cart/>}/>
+        <Route path="/browseall" element={<Browseall/>}/>
+        <Route path="/collection" element={<Collection/>}/>
         
 
           

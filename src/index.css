@@ -399,3 +399,8 @@ top: 50%
   width: 500px;
   border: 2px solid black;
 }
+
+#dres{
+  display:grid;
+  grid-template-columns: 200px 200px;
+}

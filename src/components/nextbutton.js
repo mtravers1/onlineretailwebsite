@@ -7,7 +7,7 @@ const Nextbuttom = ()=>{
             <div id="next"><hr style={{color:"black"}}/>
                 <button style={{}}>next</button>
                 <span style={{paddingLeft:"30px"}}>
-                <button >back</button>
+                <button>back</button>
                 </span>
         </div>
     )
