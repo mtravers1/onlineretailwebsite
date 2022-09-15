@@ -1,8 +1,32 @@
 import React from "react";
 import Nextbuttom from "../components/nextbutton";
 import Summary from "../components/summary";
+import { useState } from "react";
 
 const Shippingdetails = () => {
+
+    const [firstName, setFirstName]= useState('')
+
+
+    const [lastName, setLastName]=useState('')
+
+    const [addres, setAddres]=useState('')
+
+    const [address, setAddress]=useState('')
+
+    const [country, setCountry]=useState('')
+
+    const [city, setCity]=useState('')
+    
+    const [zip, setZip]= useState(' ')
+
+    const [phone, setPhone]=useState(' ')
+
+
+    const submitShipping =(e) =>{
+        e.preventDefault()
+    }
+
     return(
         <div>
 
@@ -14,16 +38,58 @@ const Shippingdetails = () => {
                 <hr/>
                     <span id="inputinfo">
                         
-                <form>
-                <input id="smallbox"/>
-                <input id="smallbox"></input>
-                <input id="bigbox"></input>
-                <input id="bigbox" style = {{marginTop:"20px"}}></input>
+                <form onSubmit={submitShipping}>
+                <input type="text" id="smallbox" placeholder="First Name"
+                required
+                value={firstName}
+                onChange={(e)=>setFirstName(e.target.value)}/>
+
+
+                <input id="smallbox" placeholder="Last Name" 
+                required
+                type="text"
+                value={lastName}
+                onChange={(e)=>setLastName(e.target.value)}></input>
+
+
+                <input id="bigbox" placeholder="Address 1" 
+                value={addres}
+                required
+                onChange={(e)=>setAddres(e.target.value)}></input>
+
+
+                <input id="bigbox" placeholder="Address 2" 
+                value={address}
+                required
+                onChange={(e)=>setAddress(e.target.value)}
+                style = {{marginTop:"20px"}}></input>
                 <br/>
-                <input id="smallbox"></input>
-                <input id="smallbox"></input>
-                <input id="smallbox"></input>
-                <input id="smallbox"></input>
+                <select 
+                required
+                value={country}
+                onChange={(e)=>setCountry(e.target.value)}>
+                <option value="Country">
+                    USA
+                </option>
+                <option value="Japan">
+                    Japan
+                </option>
+                <option value="Russia">
+                    Russia
+                </option>
+
+            </select>
+                <input id="smallbox" placeholder="City"
+                required
+                value={city}
+                onChange={(e)=>setCity(e.target.value)}></input>
+                <input id="smallbox" placeholder="Zip/Postal Code"
+                value={zip}
+                onChange={(e)=>setZip(e.target.value)}></input>
+                <input id="smallbox" placeholder="Phone Number"
+                required
+                value={phone}
+                onChange={(e)=>setPhone(e.target.value)}></input>
 
                 </form>
                 
