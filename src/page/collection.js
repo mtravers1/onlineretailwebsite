@@ -3,9 +3,12 @@ import { useState, useEffect } from "react";
 import Browseall from "./browseall";
 import Navbar from "../components/navbar";
 import ShopAll from "./shopAll";
+import useFetch from "../useFetch";
 
 const Collection = ()=>{
-    const [dress, setDress]=useState(null)
+    // const [dress, setDress]=useState(null)
+    const { data:dress } = useFetch('http://localhost:8000/dress')
+    // const [shiping, setShiping]=useState(null)
     
 // const [dress, setDress]=useState([{productname:"dress1", rating:"2", price:"$400", id:1},
 //                                    {productname:"dress2best", rating:"4", price:"$500", id:2},
@@ -18,14 +21,14 @@ const Collection = ()=>{
     //     const newdresslist = dress.filter(dres=>dres.id !==id)
     //     setDress(newdresslist)
     // }
-        useEffect(()=>{
-            fetch("http://localhost:8000/dress")
-            .then(res=>{
-                return res.json()
-            }).then(data=>{console.log(data)
-            setDress(data)})
+        // useEffect(()=>{
+        //     fetch("http://localhost:8000/dress")
+        //     .then(res=>{
+        //         return res.json()
+        //     }).then(data=>{console.log(data)
+        //     setDress(data)})
 
-        }, [])
+        // }, [])
     
 
                 
