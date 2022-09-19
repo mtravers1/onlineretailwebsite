@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
 #header{
-  background-color: pink;
+  background-color: #ff69b4;
   /* height: 50px; */
   font-size: 20px;
   border: 2px solid black;
   border-radius: 10px;
 
+  font-family: 'Alfa Slab One', cursive;
 }
 
-
+#qr{
+  font-family: 'Belgrano', serif;
+}
 #free{
   float:center;
 
@@ -20,13 +25,24 @@
 }
 
 #homenavbar{
-  font-size: 24px;
+  font-size: 26px;
+  font-family: 'Bubblegum Sans', cursive;
+  
+
 }
 #homenavbar ul{
   height: 100px;
   background-color: antiquewhite;
+  
+    
 
   
+}
+
+#homenavbar li{
+  list-style: none;
+    float: right;
+    padding-top: 50px;
 }
 
 #homenavbar a{
@@ -37,12 +53,7 @@
 
 
 
-#homenavbar li{
-  list-style: none;
-  float: right;
-  padding-top:70px;
-  padding-left: 50px
-}
+
 
 #navbar{
   height:70px
@@ -61,17 +72,20 @@
 }
 
 #headingpic{
-  height: 500px;
-  width: 1500px;
+  height: 800px;
+  width: 100%;
   background-color: pink;
+  font-family: 'Bungee Outline', cursive;
+  
 }
 
 #saleitems{
   display:grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   height:600px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   
-  padding:15px;
   
 }
  #saleitems p{
@@ -79,20 +93,23 @@
   padding-right:75px;
   position: relative;
   top:400px;
+  text-align: left;
   
  }
 
 .leftpic{
-  background-image: url("./pics/pic2.jpeg");
+  background-image: url("./pics/pic1.png");
+  background-size: cover;
 }
 .midpic{
-  background-image: url("./pics/pic2.jpeg");
-
+  background-image: url("./pics/pic2.png");
+  background-size: cover;
 }
 .rightpic{
-  background-image: url("./pics/pic2.jpeg");
+  background-image: url("./pics/pic3.png");
+  background-size: cover;
 }
-#shop{
+#shops{
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   height: 400px;
@@ -100,6 +117,42 @@
   
 }
 
+#salebutton{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#favorite{
+  font-family: 'Bubblegum Sans', cursive;
+  color: #f6a2bf;
+}
+
+
+#fav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  font-family: 'Coda Caption', sans-serif;
+  font-weight:bold;
+  font-size:26px;
+}
+
+#fav a{
+  text-decoration: none;
+  color:#ff69b4
+}
+
+#homeprice{
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 24px;
+}
+
+#hname{
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 #shopcart{
   display: grid;
@@ -108,6 +161,8 @@
   grid-gap: 20px;
   
 }
+
+
 
 #shop img{
   height: 290px;
@@ -135,7 +190,7 @@
 }
 
 #signup input{
-  width: 600px;
+  width: 80%;
   height: 50px;
   border-radius: 30px;
 }
@@ -208,6 +263,19 @@
 
 }
 
+#signup1{
+  color:#ff69b4;
+  font-family: 'Coda Caption', sans-serif;
+}
+
+#signup2{
+  font-family: 'Bubblegum Sans', cursive;
+  color:#f6a2bf;
+
+}
+
+
+
 #shopp{
   font-family: 'Lato', sans-serif;
 
@@ -219,6 +287,13 @@
 #shopal{
   font-family: 'Lato', sans-serif;
   
+}
+
+#shopbut{
+  font-family: 'Alfa Slab One', cursive;
+  border-radius: 5px;
+  background-color:#ff69b4
+
 }
 
 #newsletter{

@@ -6,12 +6,12 @@ const HomeNavbar = ()=>{
         <div id="homenavbar">
             
             <ul>
-  
+            
             <li>
                     <input type="text" style={{width:"400px", borderRadius:"20px", height:"20px"}} ></input>
                 </li>
                 <li>
-                    <Link to='/about' style={{padding:150}}>shop V</Link>
+                    <Link to='/about' style={{padding:"10px"}}>shop V</Link>
                 </li>
                 <li>
                     <Link to="/collection">Collection</Link>
@@ -22,8 +22,12 @@ const HomeNavbar = ()=>{
                 <li>
                     <a href=''>Purses</a>
                 </li>
+                <li style={{float:"left"}}>
                 <span style=
-                {{float:"left", paddingTop:70}}>Newin</span>
+                {{float:"", padding:""}}>Newin</span>
+                </li>
+  
+                
                
             </ul>
         </div>    
