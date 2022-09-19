@@ -11,6 +11,7 @@ import Cart from './page/yourcart';
 import Collection from './page/collection';
 import Browseall from './page/browseall';
 import ProductPage from './page/productpage';
+import Loyalty from './page/loyaltycard';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/browseall" element={<Browseall/>}/>
         <Route path="/collection" element={<Collection/>}/>
         <Route path="/productpage" element={<ProductPage/>}/>
+        <Route path="/loyaltycard" element={<Loyalty/>}/>
         
 
           

@@ -415,14 +415,27 @@ top: 50%
 }
 
 #creditcard{
-  height: 300px;
-  width: 500px;
+  height: 250px;
+  width: 100%;
   border: 2px solid black;
 }
 
+#creditcardinfo{
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:50px
+}
+
+#creditcardinfo input{
+height:30px
+
+}
+
+
 #paypal{
-  height: 200px;
-  width: 500px;
+  height: 100px;
+  width: 100%;
   border: 2px solid black;
 }
 
@@ -480,4 +493,8 @@ top: 50%
    border: 3px solid black;
   display:inline-flex;
 
+}
+
+#loyaltycard{
+  background-color: pink;
 }

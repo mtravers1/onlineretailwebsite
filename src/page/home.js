@@ -5,6 +5,7 @@ import End from "../components/bottom";
 import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import HomeNavbar from "../components/homenav";
 import Header from "../components/header";
+import Loyalty from "./loyaltycard";
 
 
 const Home = () => {
@@ -41,7 +42,10 @@ const Home = () => {
             <div id="signup">
                 <h1><span style={{color:"pink", fontFamily: "-moz-initial"}}>Sign up for Discounts and Updates</span></h1>
                 <h1><span style={{color:"pink", fontFamily: "fantasy"}}>Find out about upcoming promotions and new release</span></h1>
-                <input type="text"></input>
+                <span>
+                <input type="text" placeholder="Phone Number or E-mail"></input>
+                <Link to="/loyaltycard"><button style={{height:"30px", width:"30px"}} type="submit">lc</button></Link>
+                </span>
                 <p style={{color:"grey"}}>By signup for email, you agree to Giraffee Poussee's<a href="">terms of service</a> and <a href="">Privacy Policy</a>, By signing up via text, you agree to recieve recurring automated promotional and personalized marketing text messages ex. cart reminders from Giraffee Poussee at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to stop. Messaging frequency may very but data rates definitely apply.</p>
             </div> 
             </div> 
