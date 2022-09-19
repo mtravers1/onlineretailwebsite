@@ -9,7 +9,7 @@ useEffect(()=>{
     fetch(url)
     .then(res=>{
         return res.json()
-    }).then(data=>{console.log(data)
+    }).then(data=>{
     setData(data)})
 
 }, [url])

@@ -4,10 +4,14 @@ import Shippingdetails from "../shoppingcarpages.js/shippingdetails";
 import Paymentoption from "../shoppingcarpages.js/paymentoptions";
 import Shoppingcart from "../shoppingcarpages.js/shoppingcart";
 import { useState } from "react";
+import useFetch from "../useFetch";
+
 
 const Cart = () => {
   
     const [selectedItems, setSelectedItems] = useState('shoppingcart')
+    // const {data:cart}=useFetch('http://localhost:8000/Cart')
+
 
     const componentsToUse = (key)=>{
         const itemObj={
@@ -32,6 +36,8 @@ const Cart = () => {
          
         
            <div id="cart">
+
+            
         
 
             <div id="shoppingcart">
@@ -46,6 +52,14 @@ const Cart = () => {
 
 
             {display(selectedItems)}
+            {/* {cart.map((carts)=>{
+                <div key={carts.id}>
+
+                    <h1>{carts.productname}</h1>
+                    {carts.price}
+                    </div>
+
+            })} */}
 
             </div> 
         </div>

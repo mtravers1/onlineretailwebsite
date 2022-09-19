@@ -10,6 +10,7 @@ import Navbar from './components/navbar';
 import Cart from './page/yourcart';
 import Collection from './page/collection';
 import Browseall from './page/browseall';
+import ProductPage from './page/productpage';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/yourcart' element={<Cart/>}/>
         <Route path="/browseall" element={<Browseall/>}/>
         <Route path="/collection" element={<Collection/>}/>
+        <Route path="/productpage" element={<ProductPage/>}/>
         
 
           

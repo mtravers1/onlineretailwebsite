@@ -2,10 +2,15 @@ import React from "react";
 import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import BottomNavbar from "../components/bottomnav";
+import ProductPage from "./productpage";
 
 
 
 const ShopAll = (props)=>{
+
+    const click = ()=>{
+        console.log('clicked')
+    }
     return(
         <div id="shopal">
             <div style={{backgroundColor:"lightgrey"}}>
@@ -54,11 +59,102 @@ const ShopAll = (props)=>{
                 <button type="button">
                     <Link to="/browseall">Browse all</Link>
                     </button></span>
-                <span id="product">
-                        <div>
+                <span >
+                        <div id="product">
+                            <div>
+                                <button onClick={{}}>
+                                <Link to="/productpage">
                             <img>
+                                
                             </img>
-                            <p>Product</p>
+                            </Link>
+                           
+                            
+                            </button>
+                            <span style={{float:"right"}}>
+                            <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                            
+                            </span>
+                            </div>
+
+
+                            <div>
+                            <Link to="/productpage">
+                            <img>
+                                
+                            </img>
+                            </Link>
+                            <span style={{float:"right"}}>
+                            <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                           
+                            </span>
+                            </div>
+
+                            <div>
+                            <Link to="/productpage">
+                            <img>
+                                
+                            </img>
+                            </Link>
+                            <span style={{float:"right"}}>
+                            <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                            
+                            </span>
+                            </div>
+
+
+                            <div>
+                            <Link to="/productpage">
+                            <img>
+                                
+                            </img>
+                            </Link>
+                            <span style={{float:"right"}}>
+                                <span></span>
+                                <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                            
+                            </span>
+                            </div>
+
+
+
+                            <div>
+                            <Link to="/productpage">
+                            <img>
+                                
+                            </img>
+                            </Link>
+                            <span style={{float:"right"}}>
+                            <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                           
+                            </span>
+                            </div>
+
+
+                            <div>
+                            <Link to="/productpage">
+                            <img>
+                                
+                            </img>
+                            </Link>
+                            <span style={{float:"right"}}>
+                            <h1 >Product</h1>
+                            <p>rating</p>
+                            <p>price</p>
+                            
+                            </span>
+                            </div>
+                            
                         </div>
                         
                         

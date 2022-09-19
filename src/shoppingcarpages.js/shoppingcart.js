@@ -4,7 +4,7 @@ import Summary from "../components/summary";
 
 const Shoppingcart = () => {
     return(
-        <div id="shop">
+        <div id="shopcart">
 
         <div>
         <h1>payment<hr/></h1>

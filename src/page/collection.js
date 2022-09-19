@@ -4,10 +4,12 @@ import Browseall from "./browseall";
 import Navbar from "../components/navbar";
 import ShopAll from "./shopAll";
 import useFetch from "../useFetch";
+import Cart from "./yourcart";
 
 const Collection = ()=>{
     // const [dress, setDress]=useState(null)
     const { data:dress } = useFetch('http://localhost:8000/dress')
+    // const { data:cart } = useFetch('http://localhost:8000/Cart')
     // const [shiping, setShiping]=useState(null)
     
 // const [dress, setDress]=useState([{productname:"dress1", rating:"2", price:"$400", id:1},
@@ -40,6 +42,7 @@ const Collection = ()=>{
             <div><p>best selling</p>
             {dress && <Browseall dress={dress.filter((dres)=>dres.rating>=4)} />}
             </div>
+            {/* {cart && <Cart cart={cart}/>} */}
             
             
             

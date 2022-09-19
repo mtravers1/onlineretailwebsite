@@ -37,7 +37,16 @@ const Shippingdetails = () => {
            
             
         }
-        console.log(shippingsub)
+        
+        fetch('http://localhost:8000/Shipping',{
+
+        method:'POST',
+        headers:{"Content-Type": "application/json"},
+        body: JSON.stringify(shippingsub)
+    }).then(()=>{
+        console.log('newadddress')
+    })
+
     }
 
     return(
@@ -52,6 +61,7 @@ const Shippingdetails = () => {
                     <span id="inputinfo">
                         
                 <form onSubmit={submitShipping}>
+                    <div id="row" style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <input type="text" id="smallbox" placeholder="First Name"
                 required
                 value={firstName}
@@ -64,7 +74,7 @@ const Shippingdetails = () => {
                 value={lastName}
                 onChange={(e)=>setLastName(e.target.value)}></input>
 
-
+                </div>
                 <input id="bigbox" placeholder="Address 1" 
                 value={addres}
                 required
@@ -77,7 +87,9 @@ const Shippingdetails = () => {
                 onChange={(e)=>setAddress(e.target.value)}
                 style = {{marginTop:"20px"}}></input>
                 <br/>
-                <select 
+                <div id="row" style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+                <select id="smallbox"
+               
                 required
                 value={country}
                 onChange={(e)=>setCountry(e.target.value)}>
@@ -96,6 +108,8 @@ const Shippingdetails = () => {
                 required
                 value={city}
                 onChange={(e)=>setCity(e.target.value)}></input>
+                </div>
+                <div id="row" style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                 <input id="smallbox" placeholder="Zip/Postal Code"
                 value={zip}
                 onChange={(e)=>setZip(e.target.value)}></input>
@@ -103,20 +117,23 @@ const Shippingdetails = () => {
                 required
                 value={phone}
                 onChange={(e)=>setPhone(e.target.value)}></input>
+                </div>
                 <button>submit</button>
                 </form>
                 
                 
 
                 <hr/>
-                <div style={{display:"flex", justifyContent:"space-around"}}>
-                <span style = {{display: "flex", width:"200px", height:"100px", border:"3px solid black"}}>
-                    <input type="radio"></input><div><p style={{textAlign:"left"}}>free shipping</p><p>between 2-5 days</p></div>
+                <div >
+                    <div style={{display:"flex", alignItems:"center",justifyContent:"space-around"}}> 
+                <span id="radio">
+                    <input type="radio" name="standard"></input><div><p style={{textAlign:"left"}}>free shipping</p><p>between 2-5 days</p></div>
                 </span>
 
-                <span style = {{display: "flex", width:"200px", height:"100px", border:"3px solid black", float:""}}>
-                    <input type="radio"></input><div><p style={{textAlign:"left"}}>Next day shipping</p><p>24 hours after checkout</p></div>
+                <span id="radio">
+                    <input type="radio" name="nextday"></input><div><p style={{textAlign:"left"}}>Next day shipping</p><p>24 hours after checkout</p></div>
                 </span>
+                </div>
                 </div>
                 </span>
                 <Nextbuttom/>
