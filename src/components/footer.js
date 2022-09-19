@@ -5,7 +5,7 @@ const Footer = () =>{
         <div id="footer">
             <span>
                 <ul>
-                    <li>
+                    <li id="title">
                         <a href="">Track Order</a></li>
                         <li>
                         <a href="">Terms and condition</a>
@@ -22,8 +22,8 @@ const Footer = () =>{
 
             <span>
                 <ul>
-                    <li>
-                        <a href="">Track Order</a></li>
+                    <li id="title">
+                        <a href="">Brand info</a></li>
                         <li>
                         <a href="">Shipping Info</a>
                     </li>
@@ -36,8 +36,8 @@ const Footer = () =>{
 
             <span>
                 <ul>
-                    <li>
-                        <a href="">Track Order</a></li>
+                    <li id="title">
+                        <a href="">Quick Links</a></li>
                         <li>
                         <a href="">About Us</a>
                     </li>
@@ -51,8 +51,8 @@ const Footer = () =>{
 
             <span>
                 <ul>
-                    <li>
-                        <a href="">Track Order</a></li>
+                    <li id="title">
+                        <a href="">Legal</a></li>
                         <li>
                         <a href="">Size Guide</a>
                     </li>

@@ -32,7 +32,8 @@
 }
 #homenavbar ul{
   height: 100px;
-  background-color: antiquewhite;
+  background-image: url("./pics/cheeta.png");
+  
   
     
 
@@ -48,6 +49,13 @@
 #homenavbar a{
   text-decoration: none;
   padding:10px;
+  color: black;
+  
+}
+
+#homenavbar a:hover{
+  
+  color: pink;
   
 }
 
@@ -148,6 +156,7 @@
 #homeprice{
   font-family: 'Bubblegum Sans', cursive;
   font-size: 24px;
+  color: #ff69b4
 }
 
 #hname{
@@ -200,28 +209,69 @@
 
 }
 
+.collab h1{
+  font-family: 'Bungee', cursive;
+  position: relative;
+  right: 100px;
+
+}
+
+.collab p{
+  font-family: 'Coda', cursive;
+  padding: 30px;
+
+}
+
 .story{
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   font-size: 24px;
+  height:300px
+}
+
+.story h1{
+  font-family: 'Coda Caption', sans-serif;
+}
+
+.story span{
+  font-family: 'Coda Caption', sans-serif;
 }
 
 #follow{
   height: 200px;
   background-color: black;
+  
+
+
+}
+
+#foll{
+  font-family: 'Coda Caption', sans-serif;
+  font-size: 36px;
+
+
+}
+
+#title{
+  padding:30px
 }
 
 #footer{
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
 }
+
 
 #footer li{
   list-style: none;
+  text-align: left;
 }
 
 #footer a{
   text-decoration: none;
+  color: grey;
 }
 
 #tagline{
@@ -312,7 +362,10 @@
 #productpage{
   font-family: 'Lato', sans-serif;
 }
-
+#productpic{
+  background-image: url("./pics/productpage.png");
+  background-size: cover;
+}
 
 #product{
   display: grid;
@@ -336,6 +389,12 @@
   padding-right: 10px
 }
 
+#shopcollecthead{
+  font-family: 'Bubblegum Sans', cursive;
+  color:#ff69b4;
+  font-size: 32px
+
+}
 
 #product span{
   display: block;
@@ -376,6 +435,11 @@
   background-color: lightgray;
   text-align: center;
   
+}
+
+#shopbut a{
+  text-decoration: none;
+  color: black;
 }
 
 #shippingdetails{
@@ -527,18 +591,47 @@ height:30px
 #bottomimages{
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
+  padding: 30px;
+}
+
+#bottomimages img{
+  width:70%
+}
+
+#priceandsize{
+  display: flex;
+  justify-content: center;
+
 }
 
 #prodinfo{
   display:grid;
-  grid-template-rows: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 200px 150px 200px;
   text-align: left;
+  font-size: 24px;
 }
+
+#prodprice{
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 42px;
+}
+
+#prodprice select{
+  font-size: 24px;
+  border-radius: 10px;
+}
+
 
 #shopcollection{
   display: grid;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
+  text-align: left;
+  padding-left: 20px;
 
+}
+
+#shopcollection p{
+  text-align: center;
 }
 
 
@@ -548,8 +641,13 @@ height:30px
   float:left
 }
 
+#reviews{
+  display: flex;
+  justify-content: space-around;
+}
+
 #reviews span{
-    height: 100px;
+    height: 150px;
     text-align: center;
     display: block;
 }
@@ -615,5 +713,7 @@ display: flex;
   text-align: left;
 }
 
-
+#bot{
+  background-image: url("./pics/cheeta.png");
+}
 

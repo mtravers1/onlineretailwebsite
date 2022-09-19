@@ -2,9 +2,10 @@ import React from "react";
 
 const Follow = ()=>{
     return(
-        <div style={{color:"white", backgroundColor:"black", height:"100px"}}>
+        <div id="follow" style={{color:"white", backgroundColor:"black"}}>
         <span >
-            Follow Us on......<br/> 
+            <span id="foll">
+            Follow Us on......</span><br/> 
             
             <img alt="FB"/>
             <img alt="IG"/>

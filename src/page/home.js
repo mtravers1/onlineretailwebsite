@@ -51,6 +51,7 @@ const Home = () => {
             
             <div style={{backgroundColor:"black", height:"400px"}}>
             <div id="signup">
+                
                 <h1><span id="signup1">Sign up for Discounts and Updates</span></h1>
                 <h1><span id="signup2">Find out about upcoming promotions and new release</span></h1>
                 <span>
@@ -61,7 +62,7 @@ const Home = () => {
             </div> 
             </div> 
             <div className="collab">
-                <h1>Wanna Collab</h1>
+                <h1 style={{}}>Wanna Collab ??</h1>
                 <p>By signing up for email, you agree to Giraffe Poussee's Terms of Service and Privacy.
                     Policy. By signing up via text, you agree to receive recurring automated promptional
                     and personalized marketing text messages (ex. cart reminders) from Giraffe Poussee at
@@ -71,7 +72,7 @@ const Home = () => {
             </div>
             <div className="story">
                 <span><h1>Our story</h1><br/>Giraffe Pousseeat the cell number used when signing up. Blahh balh jdfdgfg</span>
-                <span><h1>Their Story</h1><br/>7900 NW 27th ave, Miami, Fl 33157<br/>803-292-7425<br/>GiraffePoussee@gmail.com</span>
+                <span><h1>The G-Spot</h1><br/>7900 NW 27th ave, Miami, Fl 33157<br/>803-292-7425<br/>GiraffePoussee@gmail.com</span>
             </div>
             <Follow />
             <Footer/>
