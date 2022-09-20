@@ -49,17 +49,24 @@ const Home = () => {
             </div>
             <button id="shopbut" type="button" style={{width:"450px", height:"100px", backgroundColor:"pink", fontWeight:"bold", fontSize:"28px", marginTop:"100px"}}><Link to="/shopAll">Shop All</Link></button>
             
-            <div style={{backgroundColor:"black", height:"400px"}}>
+            <div id="subscribe" style={{backgroundColor:"black", height:"400px"}}>
             <div id="signup">
                 
                 <h1><span id="signup1">Sign up for Discounts and Updates</span></h1>
                 <h1><span id="signup2">Find out about upcoming promotions and new release</span></h1>
-                <span>
+                <span style={{border:"2px solid", height:"200px"}}>
                 <input type="text" placeholder="Phone Number or E-mail"></input>
                 <Link to="/loyaltycard"><button style={{height:"30px", width:"30px", borderRadius:"50%"}} type="submit">lc</button></Link>
                 </span>
                 <p style={{color:"grey", fontFamily:"Helvetica", fontSize:"16px"}}>By signup for email, you agree to Giraffee Poussee's<a href="">terms of service</a> and <a href="">Privacy Policy</a>, By signing up via text, you agree to recieve recurring automated promotional and personalized marketing text messages ex. cart reminders from Giraffee Poussee at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to stop. Messaging frequency may very but data rates definitely apply.</p>
+                
+            
             </div> 
+            <div style={{float:"right", color:"white"}}>
+                <span id="subpic" ></span>
+
+            </div>
+            
             </div> 
             <div className="collab">
                 <h1 style={{}}>Wanna Collab ??</h1>

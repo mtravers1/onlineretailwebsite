@@ -179,23 +179,31 @@
 }
 
 #signup{
-  width: 50%;
+  
 
 }
 
 
 
 #dress1{
-  background-image: url('./pics/dress1.jpeg');
+  background-image: url('./pics/dress1.png');
+  background-position: center;
+  background-size: cover;
 }
 #dress2{
-  background-image: url('./pics/dress2.jpeg');
+  background-image: url('./pics/dresss2.png');
+  background-position: center;
+  background-size: cover;
 }
 #dress3{
-  background-image: url('./pics/dress3.jpeg');
+  background-image: url('./pics/dresss3.png');
+  background-position: center;
+  background-size: cover;
 }
 #dress4{
-  background-image: url('./pics/dress4.jpeg');
+  background-image: url('./pics/dresss4.png');
+  background-position: center;
+  background-size: cover;
 }
 
 #signup input{
@@ -203,6 +211,20 @@
   height: 50px;
   border-radius: 30px;
 }
+
+#subscribe{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(600px, 1fr));
+}
+
+#subpic{
+
+    background-image: url('./pics/mainpic.png');
+    height: 200px;
+    width:200px
+
+}
+
 .collab{
   font-size: 32px;
   background-color: burlywood;

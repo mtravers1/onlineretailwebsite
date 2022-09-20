@@ -6,12 +6,14 @@ const Follow = ()=>{
         <span >
             <span id="foll">
             Follow Us on......</span><br/> 
+
             
-            <img alt="FB"/>
-            <img alt="IG"/>
-            <img alt="Snap"/>
-            <img alt="tiktoc"/>
-            <img alt="youtube"/>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-facebook"><a href=""></a></ion-icon>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-instagram"></ion-icon>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-youtube"></ion-icon>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-snapchat"></ion-icon>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-tiktok"></ion-icon>
+            <ion-icon style={{padding:"30px", }} size="large" name="logo-twitter"></ion-icon>
             
         </span>
         </div>
