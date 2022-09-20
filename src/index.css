@@ -670,6 +670,10 @@ height:30px
 
 #loyal{
   width:70%
+
+}
+#loyal label{
+  margin:0px
 }
 
 #loyalcn{
@@ -682,7 +686,10 @@ height:30px
 }
 
 #loyal input{
-  width: 300px;
+  width: 400px;
+  border-radius: 10px;
+  height: 30px;
+  margin:5px
 }
 
 #body{
@@ -715,5 +722,17 @@ display: flex;
 
 #bot{
   background-image: url("./pics/cheeta.png");
+}
+
+
+#loyalinformation button{
+  border-radius:10px;
+  height: 50px;
+  width: 150px;
+  font-size: 30px;
+  margin-left: 400px;
+
+  
+
 }
 
