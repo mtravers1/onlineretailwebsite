@@ -3,22 +3,43 @@ import NavProduct from "../components/navproduct"
 
 import {BrowserRouter as Link, Route, Router, Routes} from 'react-router-dom'
 import Navbar from "../components/navbar"
+import { useState } from 'react'
 
 const ProductPage = ()=>{
+
+
+    const changePic = ()=>{
+        const selectPic={
+
+        }
+    }
+    
+    const [ pic, setPic]=useState('mike')
+
+
+    const handleClick=()=>{
+        setPic('lary')
+        
+
+
+    }
     return(
         <div>
             <NavProduct/>
             <div id="productpage">
                 <hr/>
+                
 
 
                 <div id="productdetails">
                     <div><div id="productpic" style={{height:"1000px", width:"90%"}}/>
                     <div id="bottomimages">
-                        <img style={{backgroundColor:"pink", height:"100px"}}/>
-                        <img style={{backgroundColor:"pink", height:"100px"}}/>
-                        <img style={{backgroundColor:"pink", height:"100px"}}/>
-
+                        
+                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
+                        
+                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
+                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
+                        
                     </div>
                     </div>
                     <div id="prodinfo">
