@@ -24,17 +24,25 @@
   float:right
 }
 
-#navproduct li
+
 
 #homenavbar{
   font-size: 26px;
-  font-family: 'Bubblegum Sans', cursive;
-  
+ 
+  background-image: url("./pics/cheeta.png");}
 
+  
+#bannernav{
+
+  background-image: url("./pics/cheeta.png");
+  font-size: 26px;
+  font-family: 'Bubblegum Sans', cursive;
 }
 #homenavbar ul{
   height: 100px;
-  background-image: url("./pics/cheeta.png");
+  
+  display: flex;
+  justify-content: right;
   
   
     
@@ -44,7 +52,7 @@
 
 #homenavbar li{
   list-style: none;
-    float: right;
+    
     padding-top: 50px;
     
 }
@@ -53,7 +61,7 @@
   text-decoration: none;
   padding:10px;
   color: black;
-  
+
 }
 
 #homenavbar a:hover{
@@ -87,6 +95,23 @@
   border-right: 1px solid grey;
 
   
+}
+
+#mainpic{
+  object-fit: cover;
+    max-width: 80%;
+    position: relative;
+    bottom: 80px;
+
+}
+#mainpic1{
+  object-fit: cover;
+    max-width: 65%;
+    max-height: 30%;
+    position: relative;
+    bottom: 700px;
+    left: 20px;
+
 }
 
 #navbar ul{
@@ -222,14 +247,18 @@
 }
 
 #signup input{
-  width: 80%;
-  height: 50px;
-  border-radius: 30px;
+  width: 90%;
+  height: 35px;
+  border:none;
 }
+
+
 
 #subscribe{
   display:grid;
   grid-template-columns: repeat(2, minmax(600px, 1fr));
+  grid-template-rows: 400px;
+  background-color: black;
 }
 
 #subpic{
@@ -249,7 +278,7 @@
 .collab h1{
   font-family: 'Bungee', cursive;
   position: relative;
-  right: 100px;
+  text-align: left;
 
 }
 

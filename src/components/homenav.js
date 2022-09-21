@@ -5,11 +5,13 @@ const HomeNavbar = ()=>{
     return(
         <div id="homenavbar">
             
+            <li style={{float:"left"}}>
+                    new in
+                </li>
+            
             <ul>
             
-            <li>
-                    <input type="text" style={{width:"400px", borderRadius:"20px", height:"20px"}} ></input>
-                </li>
+                
                 <li>
                     <Link to='/about' style={{padding:"10px"}}>shop V</Link>
                 </li>
@@ -22,10 +24,11 @@ const HomeNavbar = ()=>{
                 <li>
                     <a href=''>Purses</a>
                 </li>
-                <li style={{float:"left"}}>
-                <span style=
-                {{float:"", padding:""}}>Newin</span>
+                <li>
+                    <input type="text" style={{width:"400px", borderRadius:"20px", height:"20px"}} ></input>
                 </li>
+               
+                
   
                 
                

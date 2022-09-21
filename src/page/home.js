@@ -6,13 +6,17 @@ import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 import HomeNavbar from "../components/homenav";
 import Header from "../components/header";
 import Loyalty from "./loyaltycard";
+import mainpic from '../pics/mainpic.png'
+import mainpic1 from '../pics/mainpic1.png'
 
 
 const Home = () => {
     return(
         <div id="home">
             <Header/>
+            <div id="bannernav">
             <HomeNavbar/>
+            </div>
             <div id="headingpic">
             <span style={{backgroundColor:"pink", fontSize: "64px"}}>
                 <p>New Arrivals</p>
@@ -47,29 +51,33 @@ const Home = () => {
                 <span id="dress3"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$300</span><br/><span id="hname">white dress</span></p></span>
                 <span id="dress4"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$400</span><br/><span id="hname">snake dress</span></p></span>
             </div>
-            <button id="shopbut" type="button" style={{width:"450px", height:"100px", backgroundColor:"pink", fontWeight:"bold", fontSize:"28px", marginTop:"100px"}}><Link to="/shopAll">Shop All</Link></button>
+            <button id="shopbut" type="button" style={{width:"450px", height:"100px", backgroundColor:"pink", fontWeight:"bold", fontSize:"28px", marginTop:"100px", marginBottom:"10px"}}><Link to="/shopAll">Shop All</Link></button>
             
-            <div id="subscribe" style={{backgroundColor:"black", height:"400px"}}>
+            <div id="subscribe" >
             <div id="signup">
                 
                 <h1><span id="signup1">Sign up for Discounts and Updates</span></h1>
                 <h1><span id="signup2">Find out about upcoming promotions and new release</span></h1>
-                <span style={{border:"2px solid", height:"200px"}}>
-                <input type="text" placeholder="Phone Number or E-mail"></input>
-                <Link to="/loyaltycard"><button style={{height:"30px", width:"30px", borderRadius:"50%"}} type="submit">lc</button></Link>
-                </span>
-                <p style={{color:"grey", fontFamily:"Helvetica", fontSize:"16px"}}>By signup for email, you agree to Giraffee Poussee's<a href="">terms of service</a> and <a href="">Privacy Policy</a>, By signing up via text, you agree to recieve recurring automated promotional and personalized marketing text messages ex. cart reminders from Giraffee Poussee at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to stop. Messaging frequency may very but data rates definitely apply.</p>
+                <div style={{display:"flex", justifyContent:"right",borderRadius:"3px", height:"40px",width:"90%", backgroundColor:"white", marginLeft:"50px"}}>
+                <input style={{}} type="text" placeholder="Phone Number or E-mail"></input> 
+                <Link style={{ display:"flex", justifyContent:"center", alignItems:"center"}} to="/loyaltycard"><button style={{height:"30px", width:"30px", borderRadius:"50%"}} type="submit">lc</button></Link>
+                </div>
+                <p style={{color:"grey", fontFamily:"Helvetica", fontSize:"14px"}}>By signup for email, you agree to Giraffee Poussee's<a href="">terms of service</a> and <a href="">Privacy Policy</a>, By signing up via text, you agree to recieve recurring automated promotional and personalized marketing text messages ex. cart reminders from Giraffee Poussee at the cell number used when signing up. Consent is not a condition of any purchase. Reply HELP for help and STOP to stop. Messaging frequency may very but data rates definitely apply.</p>
                 
             
             </div> 
             <div style={{float:"right", color:"white"}}>
-                <span id="subpic" ></span>
+                <div>
+                <img id="mainpic"src={mainpic} />
+                <img id="mainpic1" src={mainpic1}/>
+                </div>
+
 
             </div>
             
             </div> 
             <div className="collab">
-                <h1 style={{}}>Wanna Collab ??</h1>
+                <h1 style={{paddingLeft:"100px"}}>Wanna Collab ??</h1>
                 <p>By signing up for email, you agree to Giraffe Poussee's Terms of Service and Privacy.
                     Policy. By signing up via text, you agree to receive recurring automated promptional
                     and personalized marketing text messages (ex. cart reminders) from Giraffe Poussee at
