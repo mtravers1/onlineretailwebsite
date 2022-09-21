@@ -21,8 +21,8 @@ const Navbar = ()=>{
                 <li>
                     <Link to='/'>Shop</Link>
                 </li>
-                <li>
-                    <Link to='/'>Help</Link>
+                <li >
+                    <Link to='/' style={{borderRight:"none"}}>Help</Link>
                 </li>
                 
                 

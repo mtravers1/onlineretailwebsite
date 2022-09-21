@@ -3,29 +3,36 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 const NavProduct= ()=>{
     return(
-        <div id="navbar">
-            
+        <div id="navbar" style={{display:"flex", justifyContent:"right"}}>
+          <div>  
         <ul>
 
-        <li>
-                <button type='button' style={{backgroundColor:"pink"}}><Link to='/yourcart'>Your Bag</Link></button>
-            </li>
+        
             <li>
-                <Link to="/home">home</Link>
+                <Link to="/home">Home</Link>
             </li>
             
             <li>
-                <Link to='/about'>About</Link>
+                <Link to='/shopAll'>Shop All</Link>
             </li>
             <li>
-                <Link to='/'>Shop</Link>
+                <Link to='/collection'>Collections</Link>
             </li>
             <li>
-                <Link to='/'>Help</Link>
+                <Link to='/'>Shoes</Link>
+            </li>
+            <li >
+                <Link to='/' style={{borderRight:"none"}}>Purses</Link>
             </li>
             
             
+            
+            <button type='button' style={{backgroundColor:"pink", borderRadius:"5px", color:"white"}}><Link to='/yourcart' style={{borderRight:"none", color:"white"}}>Your Bag</Link></button>
+
         </ul>
+
+        </div>
+        
     </div> 
     )
 }

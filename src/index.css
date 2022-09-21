@@ -24,6 +24,8 @@
   float:right
 }
 
+#navproduct li
+
 #homenavbar{
   font-size: 26px;
   font-family: 'Bubblegum Sans', cursive;
@@ -44,6 +46,7 @@
   list-style: none;
     float: right;
     padding-top: 50px;
+    
 }
 
 #homenavbar a{
@@ -61,22 +64,34 @@
 
 
 
-
+#botnav button{
+  display:none
+}
 
 #navbar{
-  height:70px
+  height:70px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #navbar li{
   list-style: none;
   text-decoration: none;
-  float: right;
+  height:20px
 }
 
 #navbar a{
   text-decoration: none;
-  float: left;
-  padding: 10px
+
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid grey;
+
+  
+}
+
+#navbar ul{
+  display: flex;
+  justify-content: center;
 }
 
 #headingpic{
@@ -617,7 +632,8 @@ height:30px
 }
 
 #bottomimages img{
-  width:70%
+  width:70%;
+  height:120px
 }
 
 #priceandsize{

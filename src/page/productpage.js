@@ -35,7 +35,13 @@ const ProductPage = ()=>{
     }
     return(
         <div>
-            <NavProduct/>
+            <div>
+            <NavProduct/> 
+            
+            
+            
+            
+            </div>
             <div id="productpage">
                 <hr/>
                 
@@ -50,17 +56,17 @@ const ProductPage = ()=>{
                     
                     <div id="bottomimages">
                         
-                        <img src={prodpic2} alt="pic1" style={{height:"100px"}} onClick={(e)=>handleClick(e, prodpic2)}/>
+                        <img src={prodpic2} alt="pic1"  onClick={(e)=>handleClick(e, prodpic2)}/>
                         
-                        <img src={prodpic4} alt="pic3" style={{height:"100px"}} onClick={(e)=>handleClick(e, prodpic4)}/>
-                        <img src={productpage} alt="pic3" style={{height:"100px"}} onClick={(e)=>handleClick(e, productpage)}/>
+                        <img src={prodpic4} alt="pic3"  onClick={(e)=>handleClick(e, prodpic4)}/>
+                        <img src={productpage} alt="pic3"  onClick={(e)=>handleClick(e, productpage)}/>
                         
                     </div>
                     </div>
                     <div id="prodinfo">
                         
                         <span>
-                           <h1 style={{fontSize:"54px"}}><hr/>Billy Jeans</h1><p>review</p> </span>
+                           <h1 style={{fontSize:"54px"}}>Billy Jeans</h1><span style={{display:"flex", justifyContent:"left"}}><Stars/>  5 reviews </span></span>
                         
                         <span id="prodprice" style={{color:"pink",}}><hr/>$600 <select style={{float:"right"}}>
                             
@@ -81,7 +87,7 @@ const ProductPage = ()=>{
                 <p id="shopcollecthead">Shop our collection</p>
                 <span id="shopcollection">
                     <span>
-                        <img/>
+                        <img src=""/>
                         <span>
                         <p id="homeprice">$365</p>
                         <p>Product name</p>
@@ -89,7 +95,7 @@ const ProductPage = ()=>{
 
                     </span>
                     <span>
-                    <img/>
+                    <img src=""/>
                     <span >
                         <p id="homeprice">$365</p>
                         <p>Product name</p>
@@ -97,7 +103,7 @@ const ProductPage = ()=>{
                         
                     </span>
                     <span>
-                    <img/>
+                    <img src=""/>
                     <span>
                         <p id="homeprice">$365</p>
                         <p>Product name</p>
@@ -111,13 +117,16 @@ const ProductPage = ()=>{
                     <h1 style={{textAlign:"left"}}>Reviews</h1>
                     <div >
                         <div id="reviews">
+                            <span>
+                                <img style={{width:"10%"}} src="" alt="photo"/>
+                            </span>
                             <span style={{width:"20%"}}>
                             <h1>Dianna</h1>
                             <p>11 Nov 2022</p>
-                            <p>rating</p>
+                            <Stars/>
                            
                             </span>
-                            <span style={{width:"90%", textAlign:"left", display:"flex", alignItems:"center"}}>
+                            <span style={{width:"70%", textAlign:"left", display:"flex", alignItems:"center"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                             </span>
 
@@ -125,12 +134,15 @@ const ProductPage = ()=>{
                             
                         </div>
                         <div id="reviews">
+                        <span>
+                                <img style={{width:"10%"}} src="" alt="photo"/>
+                            </span>
                         <span style={{width:"20%"}}>
                             <h1>Jessica</h1>
                             <p>15 May 2022</p>
                             <Stars/>
                             </span>
-                            <span style={{width:"90%", textAlign:"left", display:"flex", alignItems:"center"}}>
+                            <span style={{width:"70%", textAlign:"left", display:"flex", alignItems:"center"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                             </span>
                         </div>
@@ -142,7 +154,9 @@ const ProductPage = ()=>{
                 
             </div>
             <hr/>
-            <Navbar/>
+            <div id="botnav">
+            <Navbar />
+            </div>
         </div>
     )
 }
