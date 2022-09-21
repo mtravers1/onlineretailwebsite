@@ -4,6 +4,12 @@ import NavProduct from "../components/navproduct"
 import {BrowserRouter as Link, Route, Router, Routes} from 'react-router-dom'
 import Navbar from "../components/navbar"
 import { useState } from 'react'
+import Stars from "../components/stars"
+import prodpic2 from '../pics/prodpic2.png'
+import prodpic3 from '../pics/prodpic3.png'
+import prodpic4 from '../pics/prodpic4.png'
+import productpage from '../pics/productpage.png'
+ 
 
 const ProductPage = ()=>{
 
@@ -14,11 +20,15 @@ const ProductPage = ()=>{
         }
     }
     
-    const [ pic, setPic]=useState('mike')
+    const [ pic, setPic]=useState(productpage)
 
 
-    const handleClick=()=>{
-        setPic('lary')
+    const handleClick=(e, img)=>{
+        setPic(img)
+        
+        
+
+        
         
 
 
@@ -32,13 +42,18 @@ const ProductPage = ()=>{
 
 
                 <div id="productdetails">
-                    <div><div id="productpic" style={{height:"1000px", width:"90%"}}/>
+                    <div>
+                        
+                        <div id="productpic" style={{height:"600px", width:"90%"}}>
+                            <img style={{objectFit:"cover", minHeight:"90%"}}src={pic}alt="mainphoto"/> 
+                        </div>
+                    
                     <div id="bottomimages">
                         
-                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
+                        <img src={prodpic2} alt="pic1" style={{height:"100px"}} onClick={(e)=>handleClick(e, prodpic2)}/>
                         
-                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
-                        <img style={{backgroundColor:"pink", height:"100px"}} onClick={()=>handleClick()}/>
+                        <img src={prodpic4} alt="pic3" style={{height:"100px"}} onClick={(e)=>handleClick(e, prodpic4)}/>
+                        <img src={productpage} alt="pic3" style={{height:"100px"}} onClick={(e)=>handleClick(e, productpage)}/>
                         
                     </div>
                     </div>
@@ -102,7 +117,7 @@ const ProductPage = ()=>{
                             <p>rating</p>
                            
                             </span>
-                            <span style={{width:"90%", textAlign:"left"}}>
+                            <span style={{width:"90%", textAlign:"left", display:"flex", alignItems:"center"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                             </span>
 
@@ -113,9 +128,9 @@ const ProductPage = ()=>{
                         <span style={{width:"20%"}}>
                             <h1>Jessica</h1>
                             <p>15 May 2022</p>
-                            <p>rating</p>
+                            <Stars/>
                             </span>
-                            <span style={{width:"90%", textAlign:"left"}}>
+                            <span style={{width:"90%", textAlign:"left", display:"flex", alignItems:"center"}}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                             </span>
                         </div>
