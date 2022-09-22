@@ -8,6 +8,10 @@ import Header from "../components/header";
 import Loyalty from "./loyaltycard";
 import mainpic from '../pics/mainpic.png'
 import mainpic1 from '../pics/mainpic1.png'
+import dress1 from '../pics/dress1.png'
+import dress2 from '../pics/dresss2.png'
+import dress3 from '../pics/dresss3.png'
+import dress4 from '../pics/dresss4.png'
 
 
 const Home = () => {
@@ -53,10 +57,22 @@ const Home = () => {
            
             </div>
             <div id="shops">
-                <span id="dress1"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$100</span><br/><span id="hname">billy dress</span></p></span>
-                <span id="dress2"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$200</span><br/><span id="hname">flower dress</span></p></span>
-                <span id="dress3"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$300</span><br/><span id="hname">white dress</span></p></span>
-                <span id="dress4"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$400</span><br/><span id="hname">snake dress</span></p></span>
+                <span>
+                <img src={dress1}id="dress1"/><p><span style={{color:"pink"}} id="homeprice">$100</span><br/><span id="hname">billy dress</span></p>
+                </span>
+                
+                <span>
+                <img src={dress2} id="dress2"/><p ><span style={{color:"pink"}} id="homeprice">$200</span><br/><span id="hname">flower dress</span></p>
+                </span>
+                
+                
+                <span>
+                <img src={dress3} id="dress3"/><p><span style={{color:"pink"}} id="homeprice">$300</span><br/><span id="hname">white dress</span></p>
+                </span>
+                
+                <span>
+                <img src={dress4} id="dress4"/><p><span style={{color:"pink"}} id="homeprice">$400</span><br/><span id="hname">snake dress</span></p>
+                </span>
             </div>
             <button id="shopbut" type="button"><Link to="/shopAll">Shop All</Link></button>
             
@@ -65,7 +81,7 @@ const Home = () => {
                 
                 <h1><span id="signup1">Sign up for Discounts and Updates</span></h1>
                 <h1><span id="signup2">Find out about upcoming promotions and new release</span></h1>
-                <div style={{display:"flex", justifyContent:"right",borderRadius:"3px", height:"40px",width:"90%", backgroundColor:"white", marginLeft:"50px"}}>
+                <div id="signupinput">
                 <input style={{}} type="text" placeholder="Phone Number or E-mail"></input> 
                 <Link style={{ display:"flex", justifyContent:"center", alignItems:"center"}} to="/loyaltycard"><button style={{height:"30px", width:"30px", borderRadius:"50%"}} type="submit">lc</button></Link>
                 </div>
@@ -76,7 +92,10 @@ const Home = () => {
             <div style={{float:"right", color:"white"}}>
                 <div>
                 <img id="mainpic"src={mainpic} />
+                <div id="mainp">
                 <img id="mainpic1" src={mainpic1}/>
+                </div>
+                
                 </div>
 
 

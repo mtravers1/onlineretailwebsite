@@ -121,16 +121,35 @@
   object-fit: cover;
     max-width: 80%;
     position: relative;
-    bottom: 80px;
+    
 
 }
+
+#signupinput{
+
+  display:flex;
+   justify-content:right;
+   border-radius:3px;
+    height:40px;
+    width:90%;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
 #mainpic1{
-  object-fit: cover;
-    max-width: 65%;
-    max-height: 30%;
+  
+    width: 35%;
+  
+
+    
     position: relative;
-    bottom: 550px;
-    left: 20px;
+    bottom:300px;
+    
+    
 
 }
 
@@ -140,7 +159,6 @@
 }
 
 #headingpic{
-  height: 800px;
   
   background-color: pink;
   font-family: 'Bungee Outline', cursive;
@@ -197,11 +215,11 @@
   background-size: cover;
 }
 #shops{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   grid-gap: 20px;
-  
 }
 
 #salebutton{
@@ -401,7 +419,7 @@
 
 #tagline input{
   height: 50px;
-  width: 600px;
+  width: 90%;
 
 }
 
@@ -422,7 +440,7 @@
 
 #category img{
   height: 250px;
-  width: 205px;
+  width: 80%;
   background-image: url('./pics/dress4.jpeg');
 
 }
@@ -444,7 +462,7 @@
   font-family: 'Lato', sans-serif;
 
   height: 250px;
-  width: 205px;
+  width: 80%;
   background-color: grey;
   display: flex;
   justify-content: center;
@@ -963,8 +981,9 @@ display: flex;
 
 #subscribe {
   
-  grid-template-rows: repeat(2, minmax(auto, 1fr));
-  
+display: flex;
+flex-direction: column;
+
 }
 
 
