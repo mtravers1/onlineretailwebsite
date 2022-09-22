@@ -27,6 +27,15 @@ const HomeNavbar = ()=>{
                 <li>
                     <input type="text" style={{width:"400px", borderRadius:"20px", height:"20px"}} ></input>
                 </li>
+
+                <a href='#' id="togglebutton">
+                    <span id="bar" />
+                    <span id="bar" />
+                    <span id="bar" />
+
+                    
+
+                </a>
                
                 
   

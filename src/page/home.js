@@ -18,7 +18,7 @@ const Home = () => {
             <HomeNavbar/>
             </div>
             <div id="headingpic">
-            <span style={{backgroundColor:"pink", fontSize: "64px"}}>
+            <span >
                 <p>New Arrivals</p>
                 <p>New Arrivals</p>
                 <p>New Arrivals</p>
@@ -27,13 +27,20 @@ const Home = () => {
             </div>
             <div id="shoppingstrip" style={{padding:"20px", border:"2px solid black", borderRadius:10, backgroundColor:"#ff69b4", fontFamily:"'Alfa Slab One', cursive"}} href="/">View all items on sale here</div>
             <div id="saleitems">
-                <span className="leftpic"><p style={{}}>Trending<br/> 
+                <span className="leftpic">
+
+
+                    <p style={{}}>Trending<br/> 
                 This Week<br/><span id="salebutton">
-                    <button type="button" style={{color:"red", height:"50px" ,width:"200px", fontSize:"24px"}}>shop Now</button></span></p></span>
+                    <button type="button">Shop Now</button></span></p>
+                    
+                    </span>
+
+
                 <span className="midpic"><p>Bakini Sale 30% off</p></span>
                 <span className="rightpic"><p>New <br/>Date Nite <br/>
                 <span id="salebutton">
-                <button type="button" style={{height:"50px", width:"200px", border: "4px solid black", fontSize:"24px", background:"none"}}>shop here</button></span></p></span>
+                <button type="button" style={{ border: "4px solid black", background:"none"}}>shop here</button></span></p></span>
 
             </div>
             <div id="fav" >
@@ -51,7 +58,7 @@ const Home = () => {
                 <span id="dress3"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$300</span><br/><span id="hname">white dress</span></p></span>
                 <span id="dress4"><p style={{position:"relative", top:"400px"}}><span style={{color:"pink"}} id="homeprice">$400</span><br/><span id="hname">snake dress</span></p></span>
             </div>
-            <button id="shopbut" type="button" style={{width:"450px", height:"100px", backgroundColor:"pink", fontWeight:"bold", fontSize:"28px", marginTop:"100px", marginBottom:"10px"}}><Link to="/shopAll">Shop All</Link></button>
+            <button id="shopbut" type="button"><Link to="/shopAll">Shop All</Link></button>
             
             <div id="subscribe" >
             <div id="signup">

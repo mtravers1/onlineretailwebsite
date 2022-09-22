@@ -123,7 +123,7 @@ const Loyalty = ()=>{
 
 
             </div>
-            <p style={{float:"right", marginRight:"230px", marginBottom:"200px", fontWeight:"bold"}}><ion-icon style={{color:"white"}} name="star-outline"></ion-icon>required Field</p>
+            <p style={{float:"right", marginRight:"230px", fontWeight:"bold"}}><ion-icon style={{color:"white"}} name="star-outline"></ion-icon>required Field</p>
             
             <button type="Submit">Enroll </button>
             

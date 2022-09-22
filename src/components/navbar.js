@@ -8,9 +8,7 @@ const Navbar = ()=>{
             
             <ul>
   
-            <li>
-                    <button type='button'><Link to='/yourcart'>Your Cart</Link></button>
-                </li>
+            
                 <li>
                     <Link to="/home">home</Link>
                 </li>
@@ -23,6 +21,9 @@ const Navbar = ()=>{
                 </li>
                 <li >
                     <Link to='/' style={{borderRight:"none"}}>Help</Link>
+                </li>
+                <li>
+                    <button type='button'><Link to='/yourcart'>Your Cart</Link></button>
                 </li>
                 
                 

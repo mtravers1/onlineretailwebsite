@@ -15,7 +15,7 @@ const ShopAll = (props)=>{
         <div id="shopal">
             <div style={{backgroundColor:"lightgrey"}}>
               
-            <Navbar />
+            <Navbar style={{justifyContent:"right"}}/>
             
             
             
@@ -39,16 +39,17 @@ const ShopAll = (props)=>{
                 <span><img scr="./"></img><p>Category</p></span>
                 <span><img></img><p>Category</p></span>
                 <span><img></img><p>Category</p></span>
-                <span><p id="shopp">ShopNow</p><p></p></span>
+                <span id="shopp"><span ><p>shop now</p></span></span>
+                {/* <span><span id="shopp">ShopNow</span></span> */}
                 </div>
                 <div id="newsletter" >
                 
-                   <span style={{float:"left", border:"1px solid grey"}}><p>image</p>
+                   <span style={{float:"left", border:"1px solid grey"}}><img  style={{display:"flex", justifyContent:"center", alignItems:"center"}} src="" alt="photo"/>
                    
                    </span>
                    <span style={{border:"1px solid grey"}}>
                    <p  >newsletter<br/><input type="text" style={{width:"300px", height:"30px", border:"1px solid grey"}}/>
-                    <button type="submit" style={{height:"35px"}}>Subscribe</button></p> 
+                    <button type="submit" style={{height:"35px", width:"100px"}}>Subscribe</button></p> 
                    </span>
                 </div>
                 <div id="prod">
@@ -57,12 +58,12 @@ const ShopAll = (props)=>{
                 <span style={{width:"70%", float:"left"}}><h1>Header Reguarding your product</h1>
                 <br/>Sed ut perpiciatis unde omnis iste natus error voluptete accusanrium doloremque laudantiumtotam rem aperiam eaque ipsa quae ab illo<br/>
                 <button type="button">
-                    <Link to="/browseall">Browse all</Link>
+                    <Link to="/browseall" style={{textDeclearation:"none"}}>Browse all</Link>
                     </button></span>
                 <span >
                         <div id="product">
                             <div>
-                                <button onClick={{}}>
+                                
                                 <Link to="/productpage">
                             <img>
                                 
@@ -70,7 +71,7 @@ const ShopAll = (props)=>{
                             </Link>
                            
                             
-                            </button>
+                            
                             <span style={{float:"right"}}>
                             <h1 >Product</h1>
                             <p>rating</p>

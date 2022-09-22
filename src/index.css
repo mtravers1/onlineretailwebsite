@@ -24,7 +24,27 @@
   float:right
 }
 
+#home{
+  
+}
 
+#togglebutton{
+  position:absolute;
+  top:.75rem;
+  right:1rem;
+  flex-direction:column;
+  justify-content:space-between;
+  width:30px; 
+  height:21px;
+  display:none
+}
+
+#bar{
+  height:3px;
+  width:100%;
+  background-color: white;
+  border-bottom: 10px;
+}
 
 #homenavbar{
   font-size: 26px;
@@ -109,7 +129,7 @@
     max-width: 65%;
     max-height: 30%;
     position: relative;
-    bottom: 700px;
+    bottom: 550px;
     left: 20px;
 
 }
@@ -121,10 +141,29 @@
 
 #headingpic{
   height: 800px;
-  width: 100%;
+  
   background-color: pink;
   font-family: 'Bungee Outline', cursive;
+  display: flex;
+  display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
   
+}
+
+#shopbut{
+  width:450px;
+  height:100px;
+ 
+  font-weight:bold;
+  font-size:28px; 
+  margin-top:100px; 
+  margin-bottom:10px;
+  font-family: 'Alfa Slab One', cursive;
+  border-radius: 5px;
+  background-color:#ff69b4
+            
 }
 
 #saleitems{
@@ -171,6 +210,16 @@
   align-items: center;
 
 }
+
+#salebutton button {
+  
+  color:red;
+  height:50px; 
+  width:200px;
+  font-size:24px;
+}
+  
+
 
 #favorite{
   font-family: 'Bubblegum Sans', cursive;
@@ -256,8 +305,8 @@
 
 #subscribe{
   display:grid;
-  grid-template-columns: repeat(2, minmax(600px, 1fr));
-  grid-template-rows: 400px;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+ 
   background-color: black;
 }
 
@@ -292,7 +341,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
   font-size: 24px;
-  height:300px
 }
 
 .story h1{
@@ -369,7 +417,7 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 1fr));
   grid-gap:20px;
-  padding: 100px;
+ 
 }
 
 #category img{
@@ -397,7 +445,10 @@
 
   height: 250px;
   width: 205px;
-  background-color: lightgray;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #shopal{
@@ -405,12 +456,6 @@
   
 }
 
-#shopbut{
-  font-family: 'Alfa Slab One', cursive;
-  border-radius: 5px;
-  background-color:#ff69b4
-
-}
 
 #newsletter{
   height:200px;
@@ -419,10 +464,35 @@
   grid-template-columns: repeat(2, minmax(auto, 1fr));
 }
 
+#newsletter button{
+  background-color: #606060;
+  border:none;
+  margin-left:20px;
+  width:"90px"
+
+}
+
 #prod{
   display: grid;
   grid-template-columns: repeat(2,minmax(auto, 1fr));
   border: 1px solid grey
+}
+
+#prod span{
+  text-align: left;
+  
+}
+
+#prod button{
+  background-color: #606060;
+  height:50px;
+  width:100px
+}
+
+#prod a{
+  text-decoration: none;
+  color:white;
+
 }
 
 #productpage{
@@ -449,7 +519,7 @@
 #product img{
   width:130px;
   height:150px;
-  background-color: chocolate
+  background-color: lightgrey
 }
 #product div{
   padding-right: 10px
@@ -710,6 +780,10 @@ height:30px
   float:left
 }
 
+#collection{
+  background-color: #ff69b4;
+}
+
 #reviews{
   display: flex;
   justify-content: space-around;
@@ -805,3 +879,102 @@ display: flex;
 
 }
 
+
+@media(max-width: 600px){
+  #togglebutton{
+    display: flex;
+    color: pink
+
+  }
+
+  #homenavbar li{
+    display: none;
+  }
+
+  #header{
+    display: none;
+  }
+
+  #saleitems p {
+    font-size: 0px;
+    position: relative;
+    top:30px;
+    
+    
+    text-align: left;
+}
+
+#saleitems{
+ 
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap; 
+}
+
+.leftpic{
+  width:100%
+}
+
+.midpic{
+  width:100%
+}
+
+.rightpic{
+  width:100%
+}
+#shopbut{
+  width:auto;
+  height:auto;
+
+}
+
+#salebutton {
+  width:75px;
+  height:70px;
+  position: relative;
+  top:100px
+
+  
+  
+}
+#salebutton button {
+  font-size:12px;
+  margin-left:20px;
+  width:105px;
+  height:50px;
+
+  
+}
+
+#headingpic{
+  
+}
+
+#headingpic span{
+  background-color:pink; 
+  font-size: 40px
+}
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24px;
+}
+
+#subscribe {
+  
+  grid-template-rows: repeat(2, minmax(auto, 1fr));
+  
+}
+
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collab {
+  font-size: 12px;
+}
+
+}

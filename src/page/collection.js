@@ -37,11 +37,11 @@ const Collection = ()=>{
 
     return(
         <div id="collection">
-            {dress &&<Browseall dress={dress}  />}
+            {/* {dress &&<Browseall dress={dress}  /> */}
             {/* <Browseall dress={dress} handleDelete={handleDelete} /> */}
-            <div><p>best selling</p>
-            {dress && <Browseall dress={dress.filter((dres)=>dres.rating>=4)} />}
-            </div>
+            <p>best selling</p>
+            {/* {dress && <Browseall dress={dress.filter((dres)=>dres.rating>=4)} />
+            </div> */}
             {/* {cart && <Cart cart={cart}/>} */}
             
             
