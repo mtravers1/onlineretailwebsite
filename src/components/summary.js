@@ -2,7 +2,7 @@ import React from "react";
 
 const Summary = () =>{
     return(
-        <div id="summary" style={{paddingLeft:"100px"}}>
+        <div id="summary" style={{}}>
         <h1 >Summary<hr/></h1>
         <input type="text" alt="Enter Coupon code"></input><br/><br/><hr/>
         <div id="summaryinfo">

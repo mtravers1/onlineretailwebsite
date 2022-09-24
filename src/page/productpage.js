@@ -50,7 +50,7 @@ const ProductPage = ()=>{
                 <div id="productdetails">
                     <div>
                         
-                        <div id="productpic" style={{height:"600px", width:"90%"}}>
+                        <div id="productpic" style={{ width:"90%"}}>
                             <img style={{objectFit:"cover", minHeight:"90%"}}src={pic}alt="mainphoto"/> 
                         </div>
                     
@@ -82,7 +82,7 @@ const ProductPage = ()=>{
                         </div>
 
                 </div>
-                <div style={{height:"200px"}}>
+                <div style={{}}>
                     <hr/>
                 <p id="shopcollecthead">Shop our collection</p>
                 <span id="shopcollection">
@@ -113,7 +113,7 @@ const ProductPage = ()=>{
                 </div>
                 <hr style={{marginTop:"30px"}}/>
 
-                <div >
+                <div id="rev" >
                     <h1 style={{textAlign:"left"}}>Reviews</h1>
                     <div >
                         <div id="reviews">

@@ -476,7 +476,6 @@
 
 
 #newsletter{
-  height:200px;
   font-size: 39px;
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
@@ -598,7 +597,7 @@
 
 #shippingdetails{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 70% 30%;
   
 
 }
@@ -617,7 +616,7 @@ top: 50%
   cursor: pointer;
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #shoppingcart li:hover{
@@ -631,6 +630,7 @@ top: 50%
   float: left;
   display: flex;
   align-items: center;
+
   
   
 }
@@ -664,8 +664,12 @@ top: 50%
   
 }
 
+#summary{
+  padding-left: 10px;
+}
+
 #summary input{
-  width: 350px;
+  width: 80%;
   height:30px
 
 }
@@ -761,7 +765,7 @@ height:30px
 
 #prodinfo{
   display:grid;
-  grid-template-rows: 200px 150px 200px;
+ 
   text-align: left;
   font-size: 24px;
 }
@@ -898,6 +902,7 @@ display: flex;
 }
 
 
+
 @media(max-width: 600px){
   #togglebutton{
     display: flex;
@@ -996,4 +1001,133 @@ flex-direction: column;
   font-size: 12px;
 }
 
+#product{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(auto, 1fr));
+  grid-template-rows: repeat(3, minmax(auto, 1fr));
+  border: 1px solid grey;
+  padding:"20px"
+}
+
+#prod {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+#newsletter {
+  font-size: 39px;
+  display: flex;
+  flex-direction: column;
+}
+
+#product img {
+  width: 50%;
+  background-color: lightgrey;
+  height: 90%;
+}
+
+#product h1{
+  font-size: 14px;
+}
+
+#product p{
+
+  font-size: 12px;
+}
+
+#browse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#browse h1{
+  text-align: center;
+}
+
+#browse p{
+  text-align: center;
+}
+#category {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+#category img{
+  height:200px;
+  background-position: center;
+  background-size: cover;
+}
+#shopp{
+  margin:auto;
+  height:200px
+  
+}
+
+
+#newsletter img{
+  display: none;
+}
+
+#shoppingcart button{
+  padding: 10px;
+  font-size: 16px;
+}
+
+#next button {
+  width: 35%;
+  height: 50px;
+  font-size: 26px;
+  float: left;
+}
+#shopcart {
+  display: flex;
+  flex-direction: column;
+}
+
+#shippingdetails{
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+#paymentoptions{
+  display: flex;
+    flex-direction: column;
+}
+
+#bottomimages{
+  padding: 0px;
+}
+
+ #productdetails {
+    display: flex;
+    flex-direction: column ;
+  }
+
+    prodinfo {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      
+
+}
+#rev{
+  font-size: 12px;
+}
+
+#loyal input {
+  width: 100%;
+
+}
+#loyalinformation button {
+  margin-left: 0px;
+
+}
 }

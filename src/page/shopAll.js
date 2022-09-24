@@ -55,7 +55,7 @@ const ShopAll = (props)=>{
                 <div id="prod">
             
                 
-                <span style={{width:"70%", float:"left"}}><h1>Header Reguarding your product</h1>
+                <span  id="browse" style={{width:"70%", float:"left"}}><h1>Header Reguarding your product</h1>
                 <br/>Sed ut perpiciatis unde omnis iste natus error voluptete accusanrium doloremque laudantiumtotam rem aperiam eaque ipsa quae ab illo<br/>
                 <button type="button">
                     <Link to="/browseall" style={{textDeclearation:"none"}}>Browse all</Link>

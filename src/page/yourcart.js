@@ -43,8 +43,8 @@ const Cart = () => {
             <div id="shoppingcart">
                 <ul >
                     <li><span><button onClick={()=>setSelectedItems('shoppingcart')}>1.Shopping Cart</button><br/><hr style={{color:"black"}}/></span>
-                    <span><button onClick={()=>setSelectedItems('shippingdetails')} style={{paddingLeft: "150px"}}>2.Shipping Details</button><br/><hr style={{color:"black"}}/></span>
-                    <span><button onClick={()=>setSelectedItems('paymentoptions')} style={{paddingLeft: "150px"}}>3.Payment Option</button><br/><hr style={{color:"black"}}/></span></li>   
+                    <span><button onClick={()=>setSelectedItems('shippingdetails')} style={{}}>2.Shipping Details</button><br/><hr style={{color:"black"}}/></span>
+                    <span><button onClick={()=>setSelectedItems('paymentoptions')} style={{}}>3.Payment Option</button><br/><hr style={{color:"black"}}/></span></li>   
 
                 </ul>
             </div>
