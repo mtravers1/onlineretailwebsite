@@ -51,7 +51,7 @@ const ProductPage = ()=>{
                     <div>
                         
                         <div id="productpic" style={{ width:"90%"}}>
-                            <img style={{objectFit:"cover", minHeight:"90%"}}src={pic}alt="mainphoto"/> 
+                            <img style={{objectFit:"cover", maxWidth:"100%"}}src={pic}alt="mainphoto"/> 
                         </div>
                     
                     <div id="bottomimages">

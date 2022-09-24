@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 const NavProduct= ()=>{
     return(
-        <div id="navbar" style={{display:"flex", justifyContent:"right"}}>
+        <div id="navbar" style={{}}>
           <div>  
         <ul>
 

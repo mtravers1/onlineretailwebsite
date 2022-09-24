@@ -5,7 +5,7 @@ const HomeNavbar = ()=>{
     return(
         <div id="homenavbar">
             
-            <li style={{float:"left"}}>
+            <li id="newin" >
                     new in
                 </li>
             
@@ -25,7 +25,7 @@ const HomeNavbar = ()=>{
                     <a href=''>Purses</a>
                 </li>
                 <li>
-                    <input type="text" style={{width:"400px", borderRadius:"20px", height:"20px"}} ></input>
+                    <input type="text"></input>
                 </li>
 
                 <a href='#' id="togglebutton">
